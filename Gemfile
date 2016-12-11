@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Cancan gem
+gem 'cancancan'
 # Admin gem
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
