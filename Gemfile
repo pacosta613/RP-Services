@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Admin gem
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '>= 1.0.0.rc'
 # Toastr gem reveals flash messages in successful login attemps and failure attemps
 gem 'toastr-rails'
 # Devise gem
