@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Toastr gem reveals flash messages in successful login attemps and failure attemps
+gem 'toastr-rails'
 # Devise gem
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
