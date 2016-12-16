@@ -2,7 +2,7 @@
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
   config.mailer_sender = 'test@test.com'
-  config.omniauth :google_oauth2, "GOOGLE_CLIENT_ID", "GOOGLE_CLIENT_SECRET"
+  config.omniauth :google_oauth2, "536915156403-1ooff7tfsotdmbdnq4ot7crvt0tg4pjh.apps.googleusercontent.com", "l7iHOyciPgExAGL8xTxTfBbe"
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
