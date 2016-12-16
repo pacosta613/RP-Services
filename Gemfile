@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Omniauth google
+gem "omniauth"
+gem "omniauth-google-oauth2"
 # Cancan gem
 gem 'cancancan'
 # Admin gem
