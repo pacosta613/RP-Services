@@ -14,7 +14,7 @@ class CreatePiroFirstCall < ActiveRecord::Migration[5.0]
       t.string :hospital_city
 
       t.string :place_of_birth
-      t.integer :date_of_birth
+      t.date :date_of_birth
       t.string :martial_status
       t.integer :social_security
       t.string :last_occupation

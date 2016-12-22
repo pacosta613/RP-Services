@@ -19,6 +19,22 @@ class CreateAuthorizeCremationAndDisposition < ActiveRecord::Migration[5.0]
       t.integer :weight
       t.text :delivery
 
+      t.integer :relation_to_decease_number
+      t.text :relation_to_decease_description
+
+      t.string :funeral_name
+      t.string :authorize_picker
+      t.text :dispose_instruction
+
+      t.integer :urn
+      t.string :purchased_urn
+      t.text :urn_description
+      t.string :funeral_director
+
+      t.integer :registration_number
+      t.string :family_name
+      t.string :family_address
+
       t.timestamps null: false
     end
   end
