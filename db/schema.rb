@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161222032439) do
+ActiveRecord::Schema.define(version: 20161222032929) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +45,17 @@ ActiveRecord::Schema.define(version: 20161222032439) do
     t.string   "family_address"
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
+  end
+
+  create_table "cremation_permits", force: :cascade do |t|
+    t.string   "next_of_kin"
+    t.string   "address"
+    t.string   "name_of_decease"
+    t.string   "location_of_death"
+    t.date     "date_of_death"
+    t.string   "relationship"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
   create_table "designation_of_intentions", force: :cascade do |t|
