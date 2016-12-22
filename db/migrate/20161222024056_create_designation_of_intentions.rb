@@ -12,7 +12,7 @@ class CreateDesignationOfIntentions < ActiveRecord::Migration[5.0]
       t.string :location_of_cemetery
       t.string :manner_of_disposition
       t.string :location 
-      t.data :date 
+      t.date :date 
       t.string :name 
 
       t.timestamps null: false
