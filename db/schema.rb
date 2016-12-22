@@ -10,10 +10,42 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161211222924) do
+ActiveRecord::Schema.define(version: 20161222022308) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "piro_first_calls", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "middle_name"
+    t.string   "last_name"
+    t.string   "street_address"
+    t.string   "city"
+    t.string   "state"
+    t.integer  "zipcode"
+    t.string   "hospital_name"
+    t.string   "hospital_city"
+    t.string   "place_of_birth"
+    t.integer  "date_of_birth"
+    t.string   "martial_status"
+    t.integer  "social_security"
+    t.string   "last_occupation"
+    t.string   "education_level"
+    t.string   "mothers_name"
+    t.string   "fathers_name"
+    t.string   "spouse_name"
+    t.string   "name_of_cemetery"
+    t.string   "kin_first_name"
+    t.string   "kin_last_name"
+    t.string   "kin_relationship"
+    t.string   "kin_street_address"
+    t.string   "kin_city"
+    t.string   "kin_state"
+    t.integer  "kin_zipcode"
+    t.integer  "kin_phone_number"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
