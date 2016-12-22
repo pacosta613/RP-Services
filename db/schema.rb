@@ -10,10 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161222022308) do
+ActiveRecord::Schema.define(version: 20161222024056) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "designation_of_intentions", force: :cascade do |t|
+    t.string   "name_of_deceased"
+    t.date     "scheduled_cremation"
+    t.string   "location_cremation"
+    t.integer  "phone_number"
+    t.string   "address"
+    t.string   "signature"
+    t.string   "location_of_cemetery"
+    t.string   "manner_of_disposition"
+    t.string   "location"
+    t.date     "date"
+    t.string   "name"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+  end
 
   create_table "piro_first_calls", force: :cascade do |t|
     t.string   "first_name"
