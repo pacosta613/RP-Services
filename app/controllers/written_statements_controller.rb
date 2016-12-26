@@ -1,0 +1,2 @@
+class WrittenStatementsController < ApplicationController
+end

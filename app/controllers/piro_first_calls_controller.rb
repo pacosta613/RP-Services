@@ -1,0 +1,2 @@
+class PiroFirstCallsController < ApplicationController
+end

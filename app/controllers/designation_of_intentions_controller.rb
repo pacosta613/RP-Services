@@ -1,0 +1,2 @@
+class DesignationOfIntentionsController < ApplicationController
+end
