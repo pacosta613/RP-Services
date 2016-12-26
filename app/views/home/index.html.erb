@@ -9,5 +9,11 @@
 
   <% if !user_signed_in? %>
     <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-lg btn-primary" %>
+  <% else %>
+    <%= link_to "Create Funeral Info", new_piro_first_call_path, class: "btn btn-lg btn-primary" %> 
+    <%= link_to "Authorize Cremation", new_authorize_cremation_and_disposition_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to "Create Cremation Permits", new_cremation_permit_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to "Desigination of Intention", new_designation_of_intention_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to "Create Written Statement", new_written_statement_path, class: "btn btn-lg btn-primary" %>
   <% end %>
 </div>
