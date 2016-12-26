@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 # Bootstrap gem
 gem 'bootstrap-sass'
+# Bootstrap Form gem
+gem 'bootstrap_form'
 # Omniauth google
 gem "omniauth"
 gem "omniauth-google-oauth2"
