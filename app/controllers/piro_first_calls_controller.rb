@@ -1,5 +1,9 @@
 class PiroFirstCallsController < ApplicationController
 
+  def new
+    @firstcall = PiroFirstCall.new
+  end
+  
   def create
     @firstcalls = PiroFirstCall.create(piro_first_call_params)
     if @firstcalls.save
