@@ -34,6 +34,8 @@ class CreatePiroFirstCall < ActiveRecord::Migration[5.0]
       t.integer :kin_zipcode
       t.integer :kin_phone_number
 
+      t.integer :user_id
+
       t.timestamps null: false
     end
   end

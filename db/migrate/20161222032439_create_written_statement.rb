@@ -5,6 +5,8 @@ class CreateWrittenStatement < ActiveRecord::Migration[5.0]
       t.string :name_of_decease
       t.date :date
 
+      t.integer :user_id
+
       t.timestamps null: false
     end
   end

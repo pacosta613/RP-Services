@@ -1,12 +1,28 @@
 class PiroFirstCallsController < ApplicationController
 
   def create
+    @firstcalls = PiroFirstCall.create(piro_first_call_params)
+    if @firstcalls.save
+
+      redirect_to @firstcalls
+    end
   end
 
   def update
+    if @firstcalls.update(piro_first_call_params)
+
+      redirect_to @firstcalls
+    end
   end
 
   def show
+    @firstcalls = PiroFirstCall.find(params[:id])
+  end
+
+  def destroy
+    @firstcalls.destroy
+
+    redirect_to root_path
   end
 
   private

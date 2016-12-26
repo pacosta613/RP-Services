@@ -15,6 +15,8 @@ class CreateDesignationOfIntentions < ActiveRecord::Migration[5.0]
       t.date :date 
       t.string :name 
 
+      t.integer :user_id
+
       t.timestamps null: false
     end
   end

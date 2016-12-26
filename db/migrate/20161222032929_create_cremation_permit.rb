@@ -8,6 +8,8 @@ class CreateCremationPermit < ActiveRecord::Migration[5.0]
       t.date :date_of_death
       t.string :relationship
 
+      t.integer :user_id
+      
       t.timestamps null: false
     end
   end

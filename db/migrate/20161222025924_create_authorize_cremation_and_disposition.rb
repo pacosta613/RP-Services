@@ -35,6 +35,8 @@ class CreateAuthorizeCremationAndDisposition < ActiveRecord::Migration[5.0]
       t.string :family_name
       t.string :family_address
 
+      t.integer :user_id
+
       t.timestamps null: false
     end
   end

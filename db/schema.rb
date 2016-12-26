@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 20161222032929) do
     t.integer  "registration_number"
     t.string   "family_name"
     t.string   "family_address"
+    t.integer  "user_id"
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
   end
@@ -54,6 +55,7 @@ ActiveRecord::Schema.define(version: 20161222032929) do
     t.string   "location_of_death"
     t.date     "date_of_death"
     t.string   "relationship"
+    t.integer  "user_id"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
   end
@@ -70,6 +72,7 @@ ActiveRecord::Schema.define(version: 20161222032929) do
     t.string   "location"
     t.date     "date"
     t.string   "name"
+    t.integer  "user_id"
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
   end
@@ -102,6 +105,7 @@ ActiveRecord::Schema.define(version: 20161222032929) do
     t.string   "kin_state"
     t.integer  "kin_zipcode"
     t.integer  "kin_phone_number"
+    t.integer  "user_id"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
   end
@@ -130,6 +134,7 @@ ActiveRecord::Schema.define(version: 20161222032929) do
     t.string   "next_of_kin"
     t.string   "name_of_decease"
     t.date     "date"
+    t.integer  "user_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
