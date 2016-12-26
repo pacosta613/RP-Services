@@ -1,11 +1,13 @@
-<% if user_signed_in? %>
+<div class="center jumbotron">
+  <h1>Welcome to Piro Funeral Home</h1><br>
 
-  <%= link_to('Edit registration', edit_user_registration_path) %>
-  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
-<% else %>
-  <ul>
-    <li><%= link_to('Register', new_user_registration_path)  %></li>
-    <li><%= link_to('Login', new_user_session_path)  %></li>  
-    <li><%= link_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path %></li>
-  </ul>
-<% end %>
+  <p>
+    This is the home page for Piro Funeral Home. We're sorry for your lost. We will do everything within our powers to make this time of need as easy as possible.
+
+    We are available by phone or e-mail, or drop by the office in person. We are always here to help. 
+  </p>
+
+  <% if !user_signed_in? %>
+    <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-lg btn-primary" %>
+  <% end %>
+</div>
