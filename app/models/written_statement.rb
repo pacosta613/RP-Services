@@ -1,0 +1,2 @@
+class WrittenStatement < ApplicationRecord
+end

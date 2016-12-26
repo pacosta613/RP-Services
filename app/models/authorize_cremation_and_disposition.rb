@@ -1,0 +1,2 @@
+class AuthorizeCremationAndDisposition < ApplicationRecord
+end

@@ -7,6 +7,7 @@ class WrittenStatementsController < ApplicationController
   end
 
   def show
+    
   end
 
   private

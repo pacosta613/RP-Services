@@ -1,0 +1,2 @@
+class PiroFirstCall < ApplicationRecord
+end
