@@ -1,5 +1,31 @@
 <%= bootstrap_form_for(@firstcall) do |f| %>
   <%= f.text_field :first_name %>
+  <%= f.text_field :middle_name %>
+  <%= f.text_field :last_name %>
+  <%= f.text_field :street_address %>
+  <%= f.text_field :city %>
+  <%= f.text_field :state %>
+  <%= f.number_field :zipcode %>
+  <%= f.text_field :hospital_name %>
+  <%= f.text_field :hospital_city %>
+  <%= f.text_field :place_of_birth %>
+  <%= f.date_field :date_of_birth %>
+  <%= f.check_box :martial_status %>
+  <%= f.number_field :social_security %>
+  <%= f.text_field :last_occupation %>
+  <%= f.text_field :education_level %>
+  <%= f.text_field :mothers_name %>
+  <%= f.text_field :fathers_name %>
+  <%= f.text_field :spouse_name %>
+  <%= f.text_field :name_of_cemetery %>
+  <%= f.text_field :kin_first_name %>
+  <%= f.text_field :kin_last_name %>
+  <%= f.text_field :kin_relationship %>
+  <%= f.text_field :kin_street_address %>
+  <%= f.text_field :kin_city %>
+  <%= f.text_field :kin_state %>
+  <%= f.number_field :kin_zipcode %>
+  <%= f.number_field :kin_phone_number %>
 
-  <%= f.submit "Complete" %>
+  <%= f.submit "Submit", class: "btn btn-success" %>
 <% end %>
