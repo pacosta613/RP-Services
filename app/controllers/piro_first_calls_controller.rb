@@ -3,28 +3,28 @@ class PiroFirstCallsController < ApplicationController
   def new
     @firstcall = PiroFirstCall.new
   end
-  
-  def create
-    @firstcalls = PiroFirstCall.create(piro_first_call_params)
-    if @firstcalls.save
 
-      redirect_to @firstcalls
+  def create
+    @firstcall = PiroFirstCall.create(piro_first_call_params)
+    if @firstcall.save
+
+      redirect_to @firstcall
     end
   end
 
   def update
-    if @firstcalls.update(piro_first_call_params)
+    if @firstcall.update(piro_first_call_params)
 
-      redirect_to @firstcalls
+      redirect_to @firstcall
     end
   end
 
   def show
-    @firstcalls = PiroFirstCall.find(params[:id])
+    @firstcall = PiroFirstCall.find(params[:id])
   end
 
   def destroy
-    @firstcalls.destroy
+    @firstcall.destroy
 
     redirect_to root_path
   end
@@ -32,6 +32,6 @@ class PiroFirstCallsController < ApplicationController
   private
 
   def piro_first_call_params
-    params.require(:piro_first_call).permit(:first_name, :middle_name, :last_name, :street_address, :cite, :state, :zipcode, :hospital_name, :hospital_city, :place_of_birth, :date_of_birth, :martial_status, :social_security, :last_occupation, :education_level, :mothers_name, :fathers_name, :spouse_name, :name_of_cemetery, :kin_first_name, :kin_last_name, :kin_relationship, :kin_street_address, :kin_city, :kin_state, :kin_zipcode, :kin_phone_number)
+    params.require(:piro_first_call).permit(:user_id, :first_name, :middle_name, :last_name, :street_address, :cite, :state, :zipcode, :hospital_name, :hospital_city, :place_of_birth, :date_of_birth, :martial_status, :social_security, :last_occupation, :education_level, :mothers_name, :fathers_name, :spouse_name, :name_of_cemetery, :kin_first_name, :kin_last_name, :kin_relationship, :kin_street_address, :kin_city, :kin_state, :kin_zipcode, :kin_phone_number)
   end
 end

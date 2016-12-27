@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Pry gem
+gem 'pry-rails'
 # Bootstrap gem
 gem 'bootstrap-sass'
 # Bootstrap Form gem
