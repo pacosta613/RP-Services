@@ -32,7 +32,7 @@ class CreatePiroFirstCall < ActiveRecord::Migration[5.0]
       t.string :kin_city
       t.string :kin_state
       t.integer :kin_zipcode
-      t.integer :kin_phone_number
+      t.integer :kin_phone_number, :some_field, :limit => 8
 
       t.integer :user_id
 

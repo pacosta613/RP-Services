@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161222032929) do
+ActiveRecord::Schema.define(version: 20170119164953) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -60,6 +60,23 @@ ActiveRecord::Schema.define(version: 20161222032929) do
     t.datetime "updated_at",        null: false
   end
 
+  create_table "designation_of_intention", force: :cascade do |t|
+    t.string   "name_of_deceased"
+    t.date     "scheduled_cremation"
+    t.string   "location_cremation"
+    t.integer  "phone_number"
+    t.string   "address"
+    t.string   "signature"
+    t.string   "location_of_cemetery"
+    t.string   "manner_of_disposition"
+    t.string   "location"
+    t.date     "date"
+    t.string   "name"
+    t.integer  "user_id"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+  end
+
   create_table "designation_of_intentions", force: :cascade do |t|
     t.string   "name_of_deceased"
     t.date     "scheduled_cremation"
@@ -104,7 +121,8 @@ ActiveRecord::Schema.define(version: 20161222032929) do
     t.string   "kin_city"
     t.string   "kin_state"
     t.integer  "kin_zipcode"
-    t.integer  "kin_phone_number"
+    t.bigint   "kin_phone_number"
+    t.bigint   "some_field"
     t.integer  "user_id"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
