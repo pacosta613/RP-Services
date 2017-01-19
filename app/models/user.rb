@@ -1,5 +1,9 @@
 class User < ApplicationRecord
-  has_many :piro_first_calls
+  has_one :piro_first_calls
+  has_one :authorize_cremation_and_disposition
+  has_one :cremation_permit_path
+  has_one :designation_of_intention
+  has_one :written_statement
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
