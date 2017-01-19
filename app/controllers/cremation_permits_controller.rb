@@ -1,6 +1,7 @@
 class CremationPermitsController < ApplicationController
 
   def create
+    #.user_id = current_user.id
   end
 
   def update

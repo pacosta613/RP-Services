@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_one :piro_first_calls
+  has_one :piro_first_call
   has_one :authorize_cremation_and_disposition
   has_one :cremation_permit_path
   has_one :designation_of_intention

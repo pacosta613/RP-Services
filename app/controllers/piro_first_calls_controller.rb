@@ -7,6 +7,7 @@ class PiroFirstCallsController < ApplicationController
 
   def create
     @firstcall = PiroFirstCall.create(piro_first_call_params)
+    @firstcall.user_id = current_user.id
     if @firstcall.save
 
       redirect_to @firstcall

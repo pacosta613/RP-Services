@@ -6,6 +6,7 @@ class AuthorizeCremationAndDispositionController < ApplicationController
   
   def create
     @disposition = AuthorizeCremationAndDisposition.create(authorize_cremation_and_disposition_params)
+    @disposition.user_id = current_user.id
     if @disposition.save
 
       redirect_to @disposition
