@@ -1,6 +1,6 @@
-class CreateDesignationOfIntentions < ActiveRecord::Migration[5.0]
+class CreateDesignationOfIntention < ActiveRecord::Migration[5.0]
   def change
-    create_table :designation_of_intentions do |t|
+    create_table :designation_of_intention do |t|
       t.string :name_of_deceased
       t.date :scheduled_cremation
       t.string :location_cremation
