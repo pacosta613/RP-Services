@@ -5,14 +5,14 @@
     <% if user_signed_in? %>
       <nav>
         <ul class="nav navbar-nav navbar-right" id="navbarlist">
-          <% if params[:piro_first_call]  %>
+          <% if params[:piro_first_call].present? && params[:authorize_cremation_and_disposition].present? && params[:cremation_permit_path].present? && params[:designation_of_intention].present? && params[:written_statement].present? %>
             <li><%= link_to 'Funeral Info', piro_first_call_path(@firstcall) %></li>
             <li><%= link_to 'Disposition', authorize_cremation_and_disposition_path(@disposition) %></li>
             <li><%= link_to 'Cremation Permit', cremation_permit_path(@cremation) %></li>
             <li><%= link_to 'Intentions', designation_of_intention_path(@intention) %></li>
             <li><%= link_to 'Written Statement', written_statement_path(@written) %></li>
           <% else %>
-            
+            <li><%= link_to 'Funeral Info', piro_first_call_path(@firstcall) %></li>
           <% end %>
           <li><%= link_to 'Logout', destroy_user_session_path, :method => :delete %></li>
         </ul>        
