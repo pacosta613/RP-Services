@@ -1,0 +1,37 @@
+<%= bootstrap_form_for(@disposition) do |f| %>  
+  <%= f.date_field :date %>
+  <%= f.number_field :case_number %>
+
+  <%= f.text_field :crematory_name %>
+  <%= f.text_field :address %>
+  <%= f.number_field :phone_number %>
+
+  <%= f.text_field :name_of_decease %>
+  <%= f.text_field :martial_status %>
+  <%= f.text_field :last_address %>
+  <%= f.text_field :place_of_death %>
+  <%= f.text_field :sex %>
+  <%= f.number_field :age %>
+  <%= f.date_field :date_of_birth %>
+  <%= f.date_field :date_of_death %>
+  <%= f.number_field :weight %>
+  <%= f.text_field :delivery %>
+
+  <%= f.number_field :relation_to_decease_number %>
+  <%= f.text_field :relation_to_decease_description %>
+
+  <%= f.text_field :funeral_name %>
+  <%= f.text_field :authorize_picker %>
+  <%= f.text_field :dispose_instruction %>
+
+  <%= f.number_field :urn %>
+  <%= f.text_field :purchased_urn %>
+  <%= f.text_field :urn_description %>
+  <%= f.text_field :funeral_director %>
+
+  <%= f.number_field :registration_number %>
+  <%= f.text_field :family_name %>
+  <%= f.text_field :family_address %>
+
+  <%= f.submit "Submit", class: "btn btn-success" %>
+<% end %>

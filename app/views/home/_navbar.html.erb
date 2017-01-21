@@ -5,7 +5,7 @@
     <% if user_signed_in? %>
       <nav>
         <ul class="nav navbar-nav navbar-right" id="navbarlist">
-          <li><%= link_to 'Funeral Info', piro_first_calls_path(@firstcall) %></li>
+          
           <% if params[:piro_first_call].present? && params[:authorize_cremation_and_disposition].present? && params[:cremation_permit_path].present? && params[:designation_of_intention].present? && params[:written_statement].present? %>
             <li><%= link_to 'Funeral Info', piro_first_call_path(@firstcall) %></li>
             <li><%= link_to 'Disposition', authorize_cremation_and_disposition_path(@disposition) %></li>

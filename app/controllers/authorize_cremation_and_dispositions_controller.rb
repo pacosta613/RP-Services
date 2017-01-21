@@ -1,4 +1,4 @@
-class AuthorizeCremationAndDispositionController < ApplicationController
+class AuthorizeCremationAndDispositionsController < ApplicationController
 
   def new
     @disposition = AuthorizeCremationAndDisposition.new
