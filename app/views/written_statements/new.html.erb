@@ -1,0 +1,7 @@
+<%= bootstrap_form_for(@statement) do |f| %>
+  <%= f.text_field :next_of_kin %>
+  <%= f.text_field :name_of_decease %>
+  <%= f.date_field :date %>
+  
+  <%= f.submit "Submit", class: "btn btn-success" %>
+<% end %>

@@ -1,0 +1,10 @@
+<%= bootstrap_form_for(@cremation) do |f| %>
+  <%= f.text_field :next_of_kin %>
+  <%= f.text_field :address %>
+  <%= f.text_field :name_of_decease %>
+  <%= f.text_field :location_of_death %>
+  <%= f.date_field :date_of_death %>
+  <%= f.text_field :relationship %>
+
+  <%= f.submit "Submit", class: "btn btn-success" %>
+<% end %>

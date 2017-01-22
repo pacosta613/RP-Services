@@ -1,3 +1,17 @@
 <%= bootstrap_form_for(@intention) do |f| %>  
+  <%= f.text_field :name_of_deceased %>
+  <%= f.date_field :scheduled_cremation %>
+  <%= f.text_field :location_cremation %>
 
+  <%= f.number_field :phone_number %>
+  <%= f.text_field :address %>
+  <%= f.text_field :signature %>
+
+  <%= f.text_field :location_of_cemetery %>
+  <%= f.text_field :manner_of_disposition %>
+  <%= f.text_field :location %>
+  <%= f.date_field :date %>
+  <%= f.text_field :name %>
+
+  <%= f.submit "Submit", class: "btn btn-success" %>
 <% end %>
