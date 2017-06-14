@@ -1,7 +1,12 @@
-<%= bootstrap_form_for(@statement) do |f| %>
-  <%= f.text_field :next_of_kin %>
-  <%= f.text_field :name_of_decease %>
-  <%= f.date_field :date %>
-  
+<h1>Information for Written Statements</h1>
+
+<%= bootstrap_form_for(@statement, layout: :inline) do |f| %>
+
+  <p><%= f.text_field :next_of_kin, hide_label: true, placeholder: "Next Of Kin" %></p>
+    hereby represent and assert that I am entitled to control the dispositions of the remains of 
+  <%= f.text_field :name_of_decease, hide_label: true, placeholder: "Next Of Kin" %>
+  . 
+  <%= f.date_field :date, hide_label: true %></p>
+
   <%= f.submit "Submit", class: "btn btn-success" %>
 <% end %>

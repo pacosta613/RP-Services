@@ -1,3 +1,5 @@
+<h1>Information for Funeral Home</h1>
+
 <%= bootstrap_form_for(@firstcall) do |f| %>
   <%= f.text_field :first_name %>
   <%= f.text_field :middle_name %>
@@ -25,7 +27,7 @@
   <%= f.text_field :kin_city %>
   <%= f.text_field :kin_state %>
   <%= f.number_field :kin_zipcode %>
-  <%= f.number_field :kin_phone_number %>
+  <%= f.phone_field :kin_phone_number %>
 
   <%= f.submit "Submit", class: "btn btn-success" %>
 <% end %>
