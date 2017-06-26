@@ -3,7 +3,6 @@ class AuthorizeCremationAndDispositionsController < ApplicationController
   def new
     @disposition = AuthorizeCremationAndDisposition.new
   end
-  
   def create
     @disposition = AuthorizeCremationAndDisposition.create(authorize_cremation_and_disposition_params)
     @disposition.user_id = current_user.id
