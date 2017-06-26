@@ -3,7 +3,6 @@ class CremationPermitsController < ApplicationController
   def new
     @cremation = CremationPermit.new
   end
-  
   def create
     @cremation = CremationPermit.create(cremation_permits_params)
     @cremation.user_id = current_user.id
